@@ -2,14 +2,14 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomeScreenOne extends StatefulWidget {
+  const HomeScreenOne({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<HomeScreenOne> createState() => _HomeScreenOneState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenOneState extends State<HomeScreenOne> {
   // setState함수를 호출해서 build함수를 아에 다시 불려버리면, FutureBuilder가 또 실행이 됩니다.
   // 그런데 snapshot.data가 null로 돌아가지 않습니다... => 캐싱
   // FutureBuilder가 우리가 비록 setState함수를 호출해서 build함수를 다시 실행했지만,
